@@ -12,6 +12,7 @@ class FirstLaunchViewController: UIViewController, UIScrollViewDelegate {
     
     var contentScrollView : ZDCircleScrollView!
     var bottomView: UIView!
+    var registerBtn : UIButton!
     
     
     let imageArrays : [String] = ["nav_1","nav_2","nav_3"]
@@ -34,6 +35,23 @@ class FirstLaunchViewController: UIViewController, UIScrollViewDelegate {
         }
         self.view.addSubview(contentScrollView)
         
+        bottomView = UIView.init(frame: CGRect(x: CGFloat(0.0), y: ScreenHeight - 60, width: ScreenWidth, height: 60))
+        bottomView.backgroundColor = RGB(r: 13, 65, 112)
+        self.view.addSubview(bottomView)
+        
+        registerBtn = UIButton(type: UIButtonType.custom)
+        registerBtn.backgroundColor = UIColor.clear
+        registerBtn.setTitle("已有账号，登陆 >", for: .normal)
+        registerBtn.setTitleColor(RGB(r: 86, 216, 216), for: .normal)
+        registerBtn.titleLabel?.font = FONT(size: CGFloat(16))
+        registerBtn.frame = CGRect(x: CGFloat(9), y: CGFloat(5), width: CGFloat(155), height: CGFloat(50))
+        bottomView.addSubview(registerBtn)
+        
+    }
+    
+    func registerButtonEvent(_ sender : UIButton) {
+        
+        print("去登录")
     }
     // MARK: setter and getter
     
