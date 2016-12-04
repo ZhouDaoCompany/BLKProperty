@@ -22,7 +22,6 @@ class FirstLaunchViewController: UIViewController, UIScrollViewDelegate {
         super.viewDidLoad()
         
         initUI()
-        
     }
     
     // MARK: Methods
@@ -45,13 +44,22 @@ class FirstLaunchViewController: UIViewController, UIScrollViewDelegate {
         registerBtn.setTitleColor(RGB(r: 86, 216, 216), for: .normal)
         registerBtn.titleLabel?.font = FONT(size: CGFloat(16))
         registerBtn.frame = CGRect(x: CGFloat(9), y: CGFloat(5), width: CGFloat(155), height: CGFloat(50))
-        bottomView.addSubview(registerBtn)
+        registerBtn.addTarget(self, action: #selector(registerButtonEvent(_:)), for: UIControlEvents.touchUpInside)
         
+        bottomView.addSubview(registerBtn)
     }
     
     func registerButtonEvent(_ sender : UIButton) {
         
         print("去登录")
+        
+        let vc = LoginViewController()
+        let nav = UINavigationController(rootViewController: vc)
+        nav.navigationBar.barStyle = UIBarStyle.black
+        nav.navigationBar.tintColor = UIColor.white
+        self .present(nav, animated: true) {
+            
+        }
     }
     // MARK: setter and getter
     

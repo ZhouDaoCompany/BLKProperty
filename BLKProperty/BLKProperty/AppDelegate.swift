@@ -18,17 +18,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         self.window = UIWindow.init(frame: UIScreen.main.bounds)
         self.window?.backgroundColor = UIColor.white
-        let launchvc  = FirstLaunchViewController()
         self.window!.makeKeyAndVisible()
-        UIApplication.shared.setStatusBarStyle(.lightContent, animated: false)
-        self.window!.rootViewController = launchvc;
-
+        
+        goToFirstLaunchViewController()
+        
         return true
     }
     
-    //跳转去登录页面
+    //跳转去启动页面
+    func goToFirstLaunchViewController() {
+        
+        let launchvc  = FirstLaunchViewController()
+        UIApplication.shared.setStatusBarStyle(.lightContent, animated: false)
+        self.window!.rootViewController = launchvc;
+    }
     
     //直接登录成功
+    func goToLoginSuccessViewController() {
+        
+    }
+
+    
 
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
