@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "18BE2D791DEE64A00043AF0E"
+               BlueprintIdentifier = "18945ED71DF4F4F60072F0E3"
                BuildableName = "BLKProperty.app"
                BlueprintName = "BLKProperty"
                ReferencedContainer = "container:BLKProperty.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "18BE2D8D1DEE64A00043AF0E"
+               BlueprintIdentifier = "18945EEB1DF4F4F70072F0E3"
                BuildableName = "BLKPropertyTests.xctest"
                BlueprintName = "BLKPropertyTests"
                ReferencedContainer = "container:BLKProperty.xcodeproj">
@@ -42,7 +42,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "18BE2D981DEE64A00043AF0E"
+               BlueprintIdentifier = "18945EF61DF4F4F70072F0E3"
                BuildableName = "BLKPropertyUITests.xctest"
                BlueprintName = "BLKPropertyUITests"
                ReferencedContainer = "container:BLKProperty.xcodeproj">
@@ -52,7 +52,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "18BE2D791DEE64A00043AF0E"
+            BlueprintIdentifier = "18945ED71DF4F4F60072F0E3"
             BuildableName = "BLKProperty.app"
             BlueprintName = "BLKProperty"
             ReferencedContainer = "container:BLKProperty.xcodeproj">
@@ -75,7 +75,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "18BE2D791DEE64A00043AF0E"
+            BlueprintIdentifier = "18945ED71DF4F4F60072F0E3"
             BuildableName = "BLKProperty.app"
             BlueprintName = "BLKProperty"
             ReferencedContainer = "container:BLKProperty.xcodeproj">
@@ -94,7 +94,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "18BE2D791DEE64A00043AF0E"
+            BlueprintIdentifier = "18945ED71DF4F4F60072F0E3"
             BuildableName = "BLKProperty.app"
             BlueprintName = "BLKProperty"
             ReferencedContainer = "container:BLKProperty.xcodeproj">

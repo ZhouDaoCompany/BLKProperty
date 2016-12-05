@@ -6,7 +6,6 @@ target 'BLKProperty' do
 use_frameworks!
 
   # Pods for BLKProperty
-
 #Objective-C
 pod 'FDFullscreenPopGesture', '~> 1.1'
 

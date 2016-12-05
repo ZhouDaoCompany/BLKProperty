@@ -2,18 +2,18 @@
 //  LoginViewController.swift
 //  BLKProperty
 //
-//  Created by cqz on 16/12/3.
-//  Copyright © 2016年 FengYiXiao. All rights reserved.
+//  Created by apple on 16/12/5.
+//  Copyright © 2016年 CQZ. All rights reserved.
 //
 
 import UIKit
 
 class LoginViewController: BaseViewController {
-
+    
     // MARK: life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         initUI()
     }
     // MARK: methods
@@ -29,7 +29,7 @@ class LoginViewController: BaseViewController {
         })
     }
     // MARK: setter and getter
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

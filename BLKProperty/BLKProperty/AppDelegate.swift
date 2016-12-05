@@ -2,29 +2,29 @@
 //  AppDelegate.swift
 //  BLKProperty
 //
-//  Created by apple on 16/11/30.
-//  Copyright © 2016年 FengYiXiao. All rights reserved.
+//  Created by apple on 16/12/5.
+//  Copyright © 2016年 CQZ. All rights reserved.
 //
 
 import UIKit
 
 @UIApplicationMain
-
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
         self.window = UIWindow.init(frame: UIScreen.main.bounds)
         self.window?.backgroundColor = UIColor.white
         self.window!.makeKeyAndVisible()
-        
+        UIApplication.shared.setStatusBarStyle(UIStatusBarStyle.lightContent, animated: false)
         goToFirstLaunchViewController()
         
         return true
     }
-    
     //跳转去启动页面
     func goToFirstLaunchViewController() {
         
@@ -37,8 +37,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func goToLoginSuccessViewController() {
         
     }
-
-    
 
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

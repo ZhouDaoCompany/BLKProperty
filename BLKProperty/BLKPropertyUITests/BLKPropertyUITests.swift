@@ -2,8 +2,8 @@
 //  BLKPropertyUITests.swift
 //  BLKPropertyUITests
 //
-//  Created by apple on 16/11/30.
-//  Copyright © 2016年 FengYiXiao. All rights reserved.
+//  Created by apple on 16/12/5.
+//  Copyright © 2016年 CQZ. All rights reserved.
 //
 
 import XCTest
