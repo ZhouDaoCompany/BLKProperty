@@ -21,6 +21,8 @@
 		18945F2B1DF4F62E0072F0E3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18945F291DF4F62E0072F0E3 /* LoginViewController.swift */; };
 		18945F2C1DF4F62E0072F0E3 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18945F2A1DF4F62E0072F0E3 /* LoginViewController.xib */; };
 		18945F2E1DF4F63E0072F0E3 /* FirstLaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18945F2D1DF4F63E0072F0E3 /* FirstLaunchViewController.swift */; };
+		18945F311DF51CE90072F0E3 /* ComplaintsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18945F301DF51CE90072F0E3 /* ComplaintsViewController.swift */; };
+		18945F331DF51D0F0072F0E3 /* RepairViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18945F321DF51D0F0072F0E3 /* RepairViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		18945F2A1DF4F62E0072F0E3 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		18945F2D1DF4F63E0072F0E3 /* FirstLaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstLaunchViewController.swift; sourceTree = "<group>"; };
 		18945F2F1DF4F6A60072F0E3 /* BLKSwift_bridging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLKSwift_bridging.h; sourceTree = "<group>"; };
+		18945F301DF51CE90072F0E3 /* ComplaintsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComplaintsViewController.swift; sourceTree = "<group>"; };
+		18945F321DF51D0F0072F0E3 /* RepairViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepairViewController.swift; sourceTree = "<group>"; };
 		1B84D34DCE84D4B6FBA7BB21 /* Pods_BLKProperty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BLKProperty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F4ACA34CBF41DB3EDF351C5 /* Pods-BLKProperty.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BLKProperty.release.xcconfig"; path = "Pods/Target Support Files/Pods-BLKProperty/Pods-BLKProperty.release.xcconfig"; sourceTree = "<group>"; };
 		FAFFB1DD5646D3FAA640BBDE /* Pods-BLKProperty.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BLKProperty.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BLKProperty/Pods-BLKProperty.debug.xcconfig"; sourceTree = "<group>"; };
@@ -188,6 +192,7 @@
 		18945F121DF4F6060072F0E3 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				18945F301DF51CE90072F0E3 /* ComplaintsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -219,6 +224,7 @@
 		18945F161DF4F6060072F0E3 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				18945F321DF51D0F0072F0E3 /* RepairViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -495,6 +501,8 @@
 			files = (
 				18945F2E1DF4F63E0072F0E3 /* FirstLaunchViewController.swift in Sources */,
 				18945F2B1DF4F62E0072F0E3 /* LoginViewController.swift in Sources */,
+				18945F311DF51CE90072F0E3 /* ComplaintsViewController.swift in Sources */,
+				18945F331DF51D0F0072F0E3 /* RepairViewController.swift in Sources */,
 				18945F261DF4F6060072F0E3 /* BaseViewController.swift in Sources */,
 				18945F271DF4F6060072F0E3 /* DefineHeader.swift in Sources */,
 				18945EDE1DF4F4F70072F0E3 /* ViewController.swift in Sources */,
