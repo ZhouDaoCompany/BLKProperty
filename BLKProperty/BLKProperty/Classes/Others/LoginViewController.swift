@@ -32,6 +32,7 @@ class LoginViewController: BaseViewController {
     
     override func rightBtnAction() {
         
+        putDownTheKeyBoard()
         self.dismiss(animated: true, completion: {
         })
     }
@@ -39,7 +40,7 @@ class LoginViewController: BaseViewController {
     
     @IBAction func goToLoginEvent(_ sender: UIButton) {
         
-        
+        putDownTheKeyBoard()
         layOutTheApp()
     }
 
@@ -69,6 +70,15 @@ class LoginViewController: BaseViewController {
         theNavigationController.tabBarItem.image = UIImage(named: itemImage)
         theNavigationController.tabBarItem.selectedImage = UIImage(named: selectedImage)
         return theNavigationController
+    }
+    // MARK: 放下键盘
+    func putDownTheKeyBoard() {
+        
+        self.view.endEditing(true)
+    }
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
+        putDownTheKeyBoard()
     }
     
     // MARK: setter and getter

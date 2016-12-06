@@ -53,7 +53,11 @@ class FirstLaunchViewController: UIViewController, UIScrollViewDelegate {
         
         let vc = LoginViewController()
         let nav = UINavigationController(rootViewController: vc)
-        nav.navigationBar.barStyle = UIBarStyle.black
+//        nav.navigationBar.barStyle = UIBarStyle.black
+        UINavigationBar.appearance().barTintColor = UIColor.black
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
+        UIApplication.shared.setStatusBarStyle(UIStatusBarStyle.lightContent, animated: false)
+
         nav.navigationBar.tintColor = UIColor.white
         self .present(nav, animated: true) {
             
