@@ -11,6 +11,10 @@ import UIKit
 
 class LoginViewController: BaseViewController {
     
+    
+    @IBOutlet weak var loginNameTf: UITextField!
+    @IBOutlet weak var pwdTf: UITextField!
+    
     // MARK: life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,7 +27,6 @@ class LoginViewController: BaseViewController {
         
         setupNaviBarWithTitle(title: "登录")
         setupNaviBarWithBtn(btnTag: NaviBarBtn.NaviRightBtn, title: "关闭", imgName: "")
-        setupNaviBarWithBtn(btnTag: NaviBarBtn.NaviLeftBtn, title: "登录", imgName: "")
 
     }
     
@@ -33,8 +36,10 @@ class LoginViewController: BaseViewController {
         })
     }
     
-    override func leftBtnAction() {
-
+    
+    @IBAction func goToLoginEvent(_ sender: UIButton) {
+        
+        
         layOutTheApp()
     }
 

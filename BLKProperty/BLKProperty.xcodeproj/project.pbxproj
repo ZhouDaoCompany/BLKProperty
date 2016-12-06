@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		177C56E981B2BB79FF0B6F1F /* Pods_BLKProperty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B84D34DCE84D4B6FBA7BB21 /* Pods_BLKProperty.framework */; };
+		183775B01DF6B7ED00C102BD /* BLKNetWorkManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183775AF1DF6B7ED00C102BD /* BLKNetWorkManger.swift */; };
+		183775B21DF6B81E00C102BD /* BLK_RequestDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183775B11DF6B81E00C102BD /* BLK_RequestDefine.swift */; };
 		18945EDC1DF4F4F70072F0E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18945EDB1DF4F4F60072F0E3 /* AppDelegate.swift */; };
 		18945EDE1DF4F4F70072F0E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18945EDD1DF4F4F70072F0E3 /* ViewController.swift */; };
 		18945EE11DF4F4F70072F0E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18945EDF1DF4F4F70072F0E3 /* Main.storyboard */; };
@@ -43,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		183775AF1DF6B7ED00C102BD /* BLKNetWorkManger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLKNetWorkManger.swift; sourceTree = "<group>"; };
+		183775B11DF6B81E00C102BD /* BLK_RequestDefine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLK_RequestDefine.swift; sourceTree = "<group>"; };
 		18945ED81DF4F4F60072F0E3 /* BLKProperty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BLKProperty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18945EDB1DF4F4F60072F0E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18945EDD1DF4F4F70072F0E3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -96,6 +100,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		183775AE1DF6B7C400C102BD /* NetWorkManger */ = {
+			isa = PBXGroup;
+			children = (
+				183775AF1DF6B7ED00C102BD /* BLKNetWorkManger.swift */,
+				183775B11DF6B81E00C102BD /* BLK_RequestDefine.swift */,
+			);
+			path = NetWorkManger;
+			sourceTree = "<group>";
+		};
 		18945ECF1DF4F4F60072F0E3 = {
 			isa = PBXGroup;
 			children = (
@@ -239,6 +252,7 @@
 		18945F181DF4F6060072F0E3 /* CommonUI */ = {
 			isa = PBXGroup;
 			children = (
+				183775AE1DF6B7C400C102BD /* NetWorkManger */,
 				18945F191DF4F6060072F0E3 /* BaseViewController */,
 				18945F1B1DF4F6060072F0E3 /* DefineHeader */,
 			);
@@ -499,12 +513,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				183775B01DF6B7ED00C102BD /* BLKNetWorkManger.swift in Sources */,
 				18945F2E1DF4F63E0072F0E3 /* FirstLaunchViewController.swift in Sources */,
 				18945F2B1DF4F62E0072F0E3 /* LoginViewController.swift in Sources */,
 				18945F311DF51CE90072F0E3 /* ComplaintsViewController.swift in Sources */,
 				18945F331DF51D0F0072F0E3 /* RepairViewController.swift in Sources */,
 				18945F261DF4F6060072F0E3 /* BaseViewController.swift in Sources */,
 				18945F271DF4F6060072F0E3 /* DefineHeader.swift in Sources */,
+				183775B21DF6B81E00C102BD /* BLK_RequestDefine.swift in Sources */,
 				18945EDE1DF4F4F70072F0E3 /* ViewController.swift in Sources */,
 				18945F281DF4F6060072F0E3 /* ZDCircleScrollView.swift in Sources */,
 				18945EDC1DF4F4F70072F0E3 /* AppDelegate.swift in Sources */,
