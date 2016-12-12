@@ -65,7 +65,6 @@ class FirstLaunchViewController: UIViewController, UIScrollViewDelegate {
     }
     // MARK: setter and getter
     
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import PKHUD
 
 class LoginViewController: BaseViewController {
     
@@ -27,6 +27,11 @@ class LoginViewController: BaseViewController {
         
         setupNaviBarWithTitle(title: "登录")
         setupNaviBarWithBtn(btnTag: NaviBarBtn.NaviRightBtn, title: "关闭", imgName: "")
+        HUD.allowsInteraction = false
+        HUD.dimsBackground = false
+        
+        HUD.show(.progress)
+        HUD.hide(afterDelay: 4.0)
 
     }
     
@@ -37,10 +42,26 @@ class LoginViewController: BaseViewController {
         })
     }
     
-    
     @IBAction func goToLoginEvent(_ sender: UIButton) {
         
         putDownTheKeyBoard()
+        
+        if (loginNameTf.text?.isEmpty)! {
+            
+            HUD.flash(.label("请您输入登录账号"), delay: 2.0)
+            return;
+        }
+        if (pwdTf.text?.isEmpty)! {
+            
+            HUD.flash(.label("请您输入密码"), delay: 2.0)
+        }
+        
+        if (pwdTf.text?.characters.count)! > 20 || (pwdTf.text?.characters.count)! < 6 {
+            
+            HUD.flash(.label("密码格式应为6~20位,请检查"), delay: 2.0)
+        }
+        
+        
         layOutTheApp()
     }
 
@@ -80,7 +101,11 @@ class LoginViewController: BaseViewController {
         
         putDownTheKeyBoard()
     }
-    
+    func delay(_ delay:Double, closure:@escaping ()->()) {
+        DispatchQueue.main.asyncAfter(
+            deadline: DispatchTime.now() + Double(Int64(delay * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC), execute: closure)
+    }
+
     // MARK: setter and getter
     
     override func didReceiveMemoryWarning() {
