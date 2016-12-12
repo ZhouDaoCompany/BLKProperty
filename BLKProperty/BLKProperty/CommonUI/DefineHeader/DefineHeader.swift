@@ -61,3 +61,37 @@ func GCD_Delay(seconds: Double, completion: @escaping () -> Void) {
 func FONT (size : CGFloat) -> UIFont {
     return UIFont.systemFont(ofSize: size)
 }
+
+
+// MARK: 定义几个 Block
+
+typealias BLKBlock = Void
+typealias BLKBlockBlock = (_ block : BLKBlock) -> Void
+typealias BLKObjectBlock = (_ obj : Any) -> Void
+typealias BLKArrayBlock = (_ arrays : Array<Any>) -> Void
+typealias BLKDictionaryBlock = (_ dict : Dictionary<String, Any>) -> Void
+typealias BLKBlockBlock = (_ block : BLKBlock) -> Void
+typealias BLKBlockBlock = (_ block : BLKBlock) -> Void
+typealias BLKBlockBlock = (_ block : BLKBlock) -> Void
+typealias BLKBlockBlock = (_ block : BLKBlock) -> Void
+typealias BLKBlockBlock = (_ block : BLKBlock) -> Void
+typealias BLKBlockBlock = (_ block : BLKBlock) -> Void
+typealias BLKBlockBlock = (_ block : BLKBlock) -> Void
+typealias BLKBlockBlock = (_ block : BLKBlock) -> Void
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
