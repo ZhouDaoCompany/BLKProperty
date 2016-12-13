@@ -8,5 +8,9 @@
 
 import Foundation
 
+
+//存储
+let BLKDeviceIDKey : String = "BLKDeviceIDKey"
+
 //MARK: 前缀
 let BASE_URL : String = "http://zapi.zhoudao.cc/pro/"

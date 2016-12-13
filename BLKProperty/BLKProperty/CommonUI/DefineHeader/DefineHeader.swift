@@ -70,14 +70,12 @@ typealias BLKBlockBlock = (_ block : BLKBlock) -> Void
 typealias BLKObjectBlock = (_ obj : Any) -> Void
 typealias BLKArrayBlock = (_ arrays : Array<Any>) -> Void
 typealias BLKDictionaryBlock = (_ dict : Dictionary<String, Any>) -> Void
-typealias BLKBlockBlock = (_ block : BLKBlock) -> Void
-typealias BLKBlockBlock = (_ block : BLKBlock) -> Void
-typealias BLKBlockBlock = (_ block : BLKBlock) -> Void
-typealias BLKBlockBlock = (_ block : BLKBlock) -> Void
-typealias BLKBlockBlock = (_ block : BLKBlock) -> Void
-typealias BLKBlockBlock = (_ block : BLKBlock) -> Void
-typealias BLKBlockBlock = (_ block : BLKBlock) -> Void
-typealias BLKBlockBlock = (_ block : BLKBlock) -> Void
+typealias BLKErrorBlock = (_ error : Error) -> Void
+typealias BLKIndexBlock = (_ index : Int) -> Void
+typealias BLKFloatBlock = (_ afloat : CGFloat) -> Void
+typealias BLKStringBlock = (_ strText : String) -> Void
+typealias BLKCancelBlock = (_ viewController : Any) -> Void
+typealias BLKFinishedBlock = (_ viewController : UIViewController, _ resendBlock : Any) -> Void
 
 
 
