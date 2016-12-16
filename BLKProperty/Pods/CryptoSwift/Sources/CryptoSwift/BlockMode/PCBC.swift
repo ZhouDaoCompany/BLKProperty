@@ -9,6 +9,7 @@
 //
 
 struct PCBCModeWorker: BlockModeWorker {
+    
     typealias Element = Array<UInt8>
 
     let cipherOperation: CipherOperationOnBlock

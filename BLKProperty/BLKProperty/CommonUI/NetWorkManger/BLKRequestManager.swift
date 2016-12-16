@@ -19,8 +19,9 @@ class BLKRequestManager: NSObject {
 //    }
     
     //MARK: 获取服务器token
-    static func fetchToken(_ fetchSuccess : BLKStringBlock, fetchFailed : BLKBlock) {
+    class func fetchToken(_ fetchSuccess : BLKStringBlock, fetchFailed : BLKBlock) {
         
+        let parasDictionary : Dictionary<String, String> = ["deviceId": deviceID()]
         
         
     }
