@@ -32,7 +32,6 @@ class LoginViewController: BaseViewController {
         
         HUD.show(.progress)
         HUD.hide(afterDelay: 4.0)
-
     }
     
     override func rightBtnAction() {
