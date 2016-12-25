@@ -21,8 +21,8 @@ class ComplaintsViewController: BaseViewController {
     // MARK: methods
     func initUI() {
         
-        setupNaviBarWithTitle(title: "投诉建议")
-        setupNaviBarWithBtn(btnTag: NaviBarBtn.NaviRightBtn, title: "登出", imgName: "")
+        setupNaviBarWithTitle("投诉建议")
+        setupNaviBarWithBtn(NaviBarBtn.NaviRightBtn, title: "登出", imgName: "")
 
     }
     

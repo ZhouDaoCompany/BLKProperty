@@ -19,8 +19,8 @@ class RepairViewController: BaseViewController {
     // MARK: methods
     func initUI() {
         
-        setupNaviBarWithTitle(title: "报修")
-        setupNaviBarWithBtn(btnTag: NaviBarBtn.NaviRightBtn, title: "登出", imgName: "")
+        setupNaviBarWithTitle("报修")
+        setupNaviBarWithBtn(NaviBarBtn.NaviRightBtn, title: "登出", imgName: "")
 
     }
     

@@ -8,9 +8,7 @@
 
 import UIKit
 
-
 class BLKRequestManager: NSObject {
-    
     
     // MARK: 获取token
     
@@ -23,14 +21,25 @@ class BLKRequestManager: NSObject {
         
         let parasDictionary : Dictionary<String, String> = ["deviceId": deviceID()]
         
+        let urlString = BASE_URL +  GetTokenApi
         
+        BLKNetWorkManger.postWithUrl(urlString, params: parasDictionary, success: { (response) in
+        
+            print("打印结果是\(response)")
+        }, fail: { (error) in
+        
+        })
     }
     
     // MARK: 获取设备的deviceID
     static func deviceID() -> String {
         
-        var did = UserDefaults.standard.value(forKey: BLKDeviceIDKey) as! String
-        
+        var did : String = ""
+        if (UserDefaults.standard.value(forKey: BLKDeviceIDKey) != nil) {
+           
+            did = UserDefaults.standard.value(forKey: BLKDeviceIDKey) as! String
+        }
+
         if did.isEmpty {
             
             did = NSUUID.init().uuidString

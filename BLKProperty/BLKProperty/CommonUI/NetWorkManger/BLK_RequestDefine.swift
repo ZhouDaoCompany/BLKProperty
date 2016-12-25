@@ -8,12 +8,12 @@
 
 import Foundation
 
-
 //存储
 let BLKDeviceIDKey : String = "BLKDeviceIDKey"
 
 //MARK: 前缀
-let BASE_URL : String = "http://zapi.zhoudao.cc/pro/"
+//let BASE_URL : String = "http://linli.dmzhsq.com/"
+let BASE_URL : String = "http://linli.dmzhsq.com/";
 
 //MARK: 获取tokenAPI
 let GetTokenApi             = "serviceman/getToken.do"

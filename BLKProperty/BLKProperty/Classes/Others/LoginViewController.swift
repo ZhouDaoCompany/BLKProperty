@@ -19,14 +19,20 @@ class LoginViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        initUI()
+        BLKRequestManager.fetchToken({ (tokenString) in
+            
+            
+        }, fetchFailed: {
+        }())
+        
+        //initUI()
     }
     // MARK: methods
     
     func initUI() {
         
-        setupNaviBarWithTitle(title: "登录")
-        setupNaviBarWithBtn(btnTag: NaviBarBtn.NaviRightBtn, title: "关闭", imgName: "")
+        setupNaviBarWithTitle("登录")
+        setupNaviBarWithBtn(NaviBarBtn.NaviRightBtn, title: "关闭", imgName: "")
         HUD.allowsInteraction = false
         HUD.dimsBackground = false
         

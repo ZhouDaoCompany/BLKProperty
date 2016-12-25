@@ -11,7 +11,7 @@ import UIKit
 class FirstLaunchViewController: UIViewController, UIScrollViewDelegate {
     
     var contentScrollView : ZDCircleScrollView!
-    var bottomView: UIView!
+    var bottomView : UIView!
     var registerBtn : UIButton!
     
     let imageArrays : [String] = ["nav_1","nav_2","nav_3"]
@@ -64,13 +64,12 @@ class FirstLaunchViewController: UIViewController, UIScrollViewDelegate {
         }
     }
     // MARK: setter and getter
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
     /*
     // MARK: - Navigation
 
