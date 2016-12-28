@@ -59,9 +59,9 @@ func GCD_Delay(seconds: Double, completion: @escaping () -> Void) {
 }
 //MARK - 字体
 func FONT (size : CGFloat) -> UIFont {
+    
     return UIFont.systemFont(ofSize: size)
 }
-
 
 // MARK: 定义几个 Block
 

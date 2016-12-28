@@ -16,6 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
+        trimmedString("ghcsbcidbveycvewycveuwyqvcewuceiqwbcoenwqc")
+        
         self.window = UIWindow.init(frame: UIScreen.main.bounds)
         self.window?.backgroundColor = UIColor.white
         self.window!.makeKeyAndVisible()
@@ -24,6 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         return true
     }
+    
     //跳转去启动页面
     func goToFirstLaunchViewController() {
         
@@ -35,6 +38,43 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     //直接登录成功
     func goToLoginSuccessViewController() {
         
+    }
+    
+    func trimmedString(_ trimString : String) {
+        
+        var elementDictionary  = Dictionary<Character, Int>()
+        
+        for ch  in trimString.characters {
+            
+            let indexCounts  = elementDictionary[ch]
+            
+            if indexCounts != nil {
+                
+                elementDictionary[ch] = indexCounts! + 1
+            } else {
+                
+                elementDictionary[ch] = 1
+            }
+        }
+        
+        var maxCount = 0
+        
+        elementDictionary.forEach { (key, value) in
+            
+        
+            if (maxCount < value) {
+                
+                maxCount = value
+            }
+        }
+        
+        elementDictionary.forEach { (key, value) in
+            
+            if (value == maxCount) {
+                
+                print("最大的字符是: \(key)")
+            }
+        }
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
